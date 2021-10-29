@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <title>Battle Mech: NG2</title>
+        <meta name="author" content="jzxnn">
+
+        <link type="text/css" rel="stylesheet" href="./style.css" charset="utf-8">
+    </head>
+    <body>
+        <div class="content-container">
+            <div class="content-title">Battle Mechanics for NG2</div>
+
+            <div class="stats-container">
+                <div class="content-subtitle">Initial Stats</div>
+                <div class="stats-content text-center">
+                    <div class="stats-hero">
+                        <table>
+                            <tr>
+                                <td colspan="2" class="text-strong text-center">Hero</td>
+                            </tr>
+                            <tr>
+                                <td>Class:</td>
+                                <td>
+                                    <select class="stats-class">
+                                        <option value="kn">Knight</option>
+                                        <option value="as">Assassin</option>
+                                        <option value="ma">Mage</option>
+                                        <option value="hu">Hunter</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Pow:</td>
+                                <td><input type="number" class="stats-pow"value="0"></td>
+                            </tr>
+                            <tr>
+                                <td>Spd:</td>
+                                <td><input type="number" class="stats-spd"value="0"></td>
+                            </tr>
+                            <tr>
+                                <td>Int:</td>
+                                <td><input type="number" class="stats-int"value="0"></td>
+                            </tr>
+                            <tr>
+                                <td>Vit:</td>
+                                <td><input type="number" class="stats-vit"value="0"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="stats-enemy">
+                        <table>
+                            <tr>
+                                <td colspan="2" class="text-strong text-center">Enemy</td>
+                            </tr>
+                            <tr>
+                                <td>Class:</td>
+                                <td>
+                                    <select class="stats-class">
+                                        <option value="kn">Knight</option>
+                                        <option value="as">Assassin</option>
+                                        <option value="ma">Mage</option>
+                                        <option value="hu">Hunter</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Pow:</td>
+                                <td><input type="number" class="stats-pow"value="0"></td>
+                            </tr>
+                            <tr>
+                                <td>Spd:</td>
+                                <td><input type="number" class="stats-spd"value="0"></td>
+                            </tr>
+                            <tr>
+                                <td>Int:</td>
+                                <td><input type="number" class="stats-int"value="0"></td>
+                            </tr>
+                            <tr>
+                                <td>Vit:</td>
+                                <td><input type="number" class="stats-vit"value="0"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="stats-actions">
+                        <button class="btn-actions btn-stats-randomize">RANDOMIZE</button>
+                        <button class="btn-actions btn-stats-battle">BATTLE</button>
+                        <button class="btn-actions btn-stats-reset">RESET</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="logs-container">
+                <div class="content-subtitle">Logs</div>
+                <textarea class="logs-textarea" rows="5" disabled></textarea>
+            </div>
+
+
+            <div class="battle-container disabled">
+                <div class="content-subtitle">Battle</div>
+                <div class="battle-content">
+                    <div class="battle-info">
+                        <div class="battle-char char-hero">
+                            <div class="battle-hp-label">Hero HP</div>
+                            <div>
+                                <input type="text" class="battle-hp" data-ohp="0" data-chp="0" value="0" disabled>
+                            </div>
+                            <div class="battle-stats-info">
+                            dmg:<span class="battle-dmg">0</span> /
+                            mgc-dmg:<span class="battle-mgcdmg">0</span> /
+                            spd:<span class="battle-spd">0</span>
+                            </div>
+                        </div>
+                        <div class="battle-char char-enemy">
+                            <div class="battle-hp-label">Enemy HP</div>
+                            <div>
+                                <input type="text" class="battle-hp" data-ohp="0" data-chp="0" value="0" disabled>
+                            </div>
+                            <div class="battle-stats-info">
+                                dmg:<span class="battle-dmg">0</span> /
+                                mgc-dmg:<span class="battle-mgcdmg">0</span> /
+                                spd:<span class="battle-spd">0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="battle-actions">
+                        <button class="btn-actions btn-atk">ATK</button>
+                        <button class="btn-actions btn-def">DEF</button>
+                        <button class="btn-actions btn-cntr">CNTR</button>
+                    </div>
+                </div>
+            </div>
+
+            <script type="text/javascript" src="./jquery.min.js"></script>
+            <script type="text/javascript" src="./script.js"></script>
+
+    </body>
+</html>
+

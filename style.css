@@ -1,0 +1,113 @@
+body {
+    font-family: helvetica;
+}
+
+.content-container {padding: 50px;margin: 50px;border: 1px solid;}
+
+.content-title, .content-subtitle {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.content-subtitle {
+    font-size: 18px;
+}
+
+.stats-container, .battle-container, .logs-container {
+    padding:10px 25px;
+}
+
+.logs-textarea {
+    width:100%;
+}
+
+.stats-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.stats-hero {
+    flex: 1 0 50%;
+}
+
+.stats-enemy {
+    flex: 1 0 50%;
+}
+
+.stats-actions {
+    flex: 1 0 100%;
+}
+
+.stats-content table {
+    margin: 0 auto;
+}
+
+.battle-info {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.battle-char {
+    flex: 1 0 50%;
+    text-align: center;
+}
+
+.battle-char input {
+    width: 100%;
+    min-width:150px;
+    max-width:200px;
+    text-align: center;
+}
+
+.battle-actions {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    margin: 25px auto;
+    border: 1px solid;
+}
+
+.battle-stats-info{
+    font-size:12px;
+}
+
+.btn-actions {
+    max-width: 150px;
+    width: 100%;
+    text-align:center;
+    padding:5px;
+    margin: 10px auto;
+}
+
+.stats-actions .btn-actions {
+    margin: 25px;
+}
+
+.text-center {
+    text-align:center;
+}
+
+.text-strong {
+    font-weight:700;
+}
+
+.fx {
+    display:flex;
+}
+
+.fx-half {
+    flex:1 0 50%;
+}
+
+.fx-full {
+    flex:1 0 100%;
+}
+.fx-center {
+    justify-content:center;
+    align-items:center;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: .5;
+}
